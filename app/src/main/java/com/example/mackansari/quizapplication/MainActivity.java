@@ -7,13 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button2, button3,button4, answer4;
+    RadioButton button2, button3,button4, answer4;
 
     TextView score, question;
 
@@ -32,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
         r = new Random();
 
-        button2 = (Button) findViewById(R.id.button2);
-        button3 = (Button) findViewById(R.id.button3);
-        button4 = (Button) findViewById(R.id.button4);
-        answer4 = (Button) findViewById(R.id.answer4);
+        button2 = (RadioButton) findViewById(R.id.button2);
+        button3 = (RadioButton) findViewById(R.id.button3);
+        button4 = (RadioButton) findViewById(R.id.button4);
+        answer4 = (RadioButton) findViewById(R.id.answer4);
 
         score = (TextView)findViewById(R.id.score);
         question = (TextView) findViewById(R.id.question);
